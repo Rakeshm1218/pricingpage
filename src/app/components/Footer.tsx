@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="flex space-x-4 mt-4">
               {/* X */}
               <a
-                href="#"
+                href="https://x.com/KatomaranIndia"
                 aria-label="X"
                 className="text-gray-300 hover:text-white"
                 target="_blank"
@@ -41,7 +41,7 @@ const Footer = () => {
               </a>
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/katomaran/"
                 aria-label="LinkedIn"
                 className="text-gray-300 hover:text-white"
                 target="_blank"
@@ -58,7 +58,7 @@ const Footer = () => {
               </a>
               {/* Instagram */}
               <a
-                href="#"
+                href="https://www.instagram.com/katomaran_tbs/#"
                 aria-label="Instagram"
                 className="text-gray-300 hover:text-white"
                 target="_blank"
@@ -75,7 +75,7 @@ const Footer = () => {
               </a>
               {/* GitHub */}
               <a
-                href="#"
+                href="https://github.com/katomaran-ws"
                 aria-label="GitHub"
                 className="text-gray-300 hover:text-white"
                 target="_blank"
