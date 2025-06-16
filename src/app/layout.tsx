@@ -4,8 +4,8 @@ import Navbar from "./Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Kato Video Analytics",
-  description: "AI Video Surveillance Platform",
+  title: "Katomaran",
+  description: "",
 };
 
 export default function RootLayout({
