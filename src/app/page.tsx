@@ -9,7 +9,7 @@ const cameraOptionsLarge = [
 
 const pricingModels = [
   {
-    type: "ON PREMISE HW & Perpetual license SW",
+    type: "On Premise HW & Perpetual license SW",
     cameraTiers: [
       {
         cameras: "Upto 250 cams",
@@ -73,7 +73,7 @@ const pricingModels = [
     ],
   },
   {
-    type: "ON PREMISE HW & SW as subscription",
+    type: "On Premise HW & SW as subscription",
     note: "Software minimum 3 years contract",
     cameraTiers: [
       {
@@ -309,9 +309,9 @@ export default function Home() {
           <p className="text-lg text-gray-600 font-medium max-w-2xl mx-auto">
             Choose the perfect plan for your business needs
           </p>
-          <p className="text-sm text-gray-500 mt-2 max-w-2xl mx-auto">
+          {setupType === "large" && (<p className="text-sm text-gray-500 mt-2 max-w-2xl mx-auto">
             Note: Video Management System (VMS) is free for all plans below
-          </p>
+          </p>)}
         </div>
 
         {/* Setup Type Toggle */}
@@ -418,7 +418,7 @@ export default function Home() {
           <section className="mb-16 pb-20">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-2xl font-bold mb-6 text-gray-900">
-                Use Cases
+                Applications
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-colors ease-out duration-300">
@@ -480,6 +480,7 @@ export default function Home() {
         <div className="px-6 sm:px-12 lg:px-24">
           {/* Camera Tier Selection */}
           <div className="mb-12">
+          
             <div className="flex flex-wrap justify-center gap-2">
               {cameraOptionsLarge.map((option, idx) => (
                 <button
@@ -512,7 +513,7 @@ export default function Home() {
                         {/* Plan Name */}
                         <div className="mb-6">
                           <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                            {model.type.split(" ")[0]}{" "}
+                            {model.type.split(" ")[0]}{"-"}
                             {model.type.split(" ")[1]}
                           </h3>
                           <p className="text-sm text-gray-600">
@@ -671,9 +672,9 @@ export default function Home() {
                             key={model.type}
                             className="py-4 px-6 font-bold text-gray-700 text-left min-w-[180px]"
                           >
-                            <div>{model.type.split(" ")[0]}</div>
+                            <div>{model.type.split(" ")[0]}{"-"}{model.type.split(" ")[1]}</div>
                             <div className="text-sm text-gray-500">
-                              {model.type.split(" ").slice(1).join(" ")}
+                              {model.type.split(" ").slice(2).join(" ")}
                             </div>
                           </th>
                         ))}
