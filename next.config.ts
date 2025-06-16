@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    appDir: true, // 👈 ensures App Router is enabled
-  },
+  // App Router is now stable and enabled by default
 };
 
 export default nextConfig;
